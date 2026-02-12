@@ -1,77 +1,42 @@
+# 📊 Customer Churn Prediction – End-to-End ML Project
+
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
+![Machine Learning](https://img.shields.io/badge/ML-Classification-yellow)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 ---
 
-## ⚙️ Machine Learning Pipeline
+## 🚀 Project Overview
 
-### 1️⃣ Data Preprocessing
-- Handling missing values
-- Encoding categorical variables
-- Feature scaling (where required)
+Customer churn is a critical challenge for subscription-based businesses. Losing customers directly impacts revenue and growth.  
 
-### 2️⃣ Train-Test Split
-- 80/20 split
-- Ensures fair evaluation on unseen data
+This project builds a complete end-to-end machine learning pipeline to predict whether a customer will churn based on historical behavioral and demographic data.
 
-### 3️⃣ Models Implemented
+The system includes:
 
-#### 🔹 Logistic Regression (Baseline)
-- Interpretable
-- Probabilistic output
-- Strong baseline model
-
-#### 🔹 Random Forest (Improved Model)
-- Ensemble of decision trees
-- Handles non-linearity
-- Reduces overfitting
-- Feature importance extraction
+- Data preprocessing
+- Feature engineering
+- Model training
+- Model comparison
+- Hyperparameter tuning
+- Cross-validation
+- ROC-AUC evaluation
+- Feature importance analysis
+- Model serialization for deployment
 
 ---
 
-## 📈 Model Evaluation Metrics
+## 🧠 Problem Statement
 
-The models were evaluated using:
+Given structured customer data, predict whether a customer will:
 
-- Accuracy
-- Precision
-- Recall
-- F1-Score
-- ROC-AUC (Primary Metric)
+- **1 → Churn**
+- **0 → Not Churn**
 
-### Why ROC-AUC?
-
-ROC-AUC measures the model’s ability to distinguish between churn and non-churn customers across all thresholds, making it ideal for imbalanced classification problems.
+The objective is to help businesses proactively identify high-risk customers and take retention actions.
 
 ---
 
-## 🔍 Cross-Validation & Hyperparameter Tuning
+## 📂 Project Structure
 
-- K-Fold Cross Validation
-- GridSearchCV for optimal hyperparameters
-- Tuned parameters:
-  - `n_estimators`
-  - `max_depth`
-  - `min_samples_split`
-
-This ensures robust and generalizable performance.
-
----
-
-## 🌳 Feature Importance Analysis
-
-Using Random Forest feature importances:
-
-- Identified key churn drivers
-- Determined most influential features
-- Extracted business insights
-
-### Key Insight Example:
-Customers with lower tenure and higher monthly charges show higher churn probability.
-
----
-
-## 💾 Model Saving & Deployment Ready
-
-The final model is serialized using:
-
-```python
-joblib.dump(model, "churn_model.pkl")
