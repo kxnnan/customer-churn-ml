@@ -1,0 +1,11 @@
+customer_id,age,tenure,monthly_charges,total_charges,contract_type,churn
+C001,25,1,900,900,Monthly,Yes
+C002,45,24,450,10800,Yearly,No
+C003,30,3,800,2400,Monthly,Yes
+C004,50,36,300,10800,Yearly,No
+C005,23,2,950,1900,Monthly,Yes
+C006,40,18,500,9000,Yearly,No
+C007,35,6,700,4200,Monthly,Yes
+C008,60,48,250,12000,Yearly,No
+C009,28,4,850,3400,Monthly,Yes
+C010,55,30,400,12000,Yearly,No
